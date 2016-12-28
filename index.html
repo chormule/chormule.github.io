@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+
+   <!-- Always force latest IE rendering engine (even in intranet) -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+   <!-- Mobile viewport optimized: h5bp.com/viewport -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+
+  <title>Angular E2E Tests Application</title>
+  <script src="scripts/angular.js"></script>
+  <script src="app.js"></script>
+  
+   
+	
+</head>
+<body>
+  
+   <h1><center> My Test Angular JS application </center></h1>
+   <br/></br/>
+   <div id="main-view" ng-controller="MyCtrl as ctrl">
+  
+         First Input : <input type="text" ng-model="ctrl.object1" /> 
+		 
+		 <br/></br/>
+		 Second Input :  <input type="text" ng-model="ctrl.object2" />
+		 <br/><br/>
+		 
+		 <button id="result" type="button" ng-click="ctrl.getResult()">Get the result</button>
+		 <br/>
+		 
+		 <hr/>
+		 
+		 Result is  :-  <b><span ng-bind="ctrl.result"></span></b>  
+  </div> 
+</body>
+</html>
